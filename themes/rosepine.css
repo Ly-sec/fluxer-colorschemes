@@ -1,57 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
+[class*="notice"],
+[class*="error"],
+[class*="banner"],
+[class*="toast"] {
+    color: #191724 !important;
+}
+
 :root {
     --font-sans: 'Plus Jakarta Sans', sans-serif;
+
     --background-primary: #1f1d2e;
-    --background-tertiary: #26233a;
     --background-secondary: #191724;
     --background-secondary-alt: #21202e;
+    --background-secondary-lighter: #1f1d2e;
+    --background-tertiary: #26233a;
     --background-textarea: #26233a;
     --background-header-primary: #1f1d2e;
     --background-header-primary-hover: #26233a;
     --background-header-secondary: #191724;
+    --background-channel-header: #1f1d2e;
     --background-modifier-hover: #403d52;
-    --guild_list-foreground: #908caa;
     --background-modifier-selected: #524f67;
-    --background-modifier-accent: #403d52;
+    --background-modifier-accent: transparent;
     --background-modifier-accent-focus: #524f67;
+    --form-surface-background: #26233a;
+    --surface-interactive-hover-bg: #403d52;
+    --surface-interactive-selected-bg: #524f67;
+    --surface-interactive-selected-color: #908caa;
+    --panel-control-bg: #1f1d2e;
+    --panel-control-border: #403d52;
+    --panel-control-divider: #26233a;
+    --panel-control-highlight: #26233a;
+
     --brand-primary: #c4a7e7;
     --brand-secondary: #9ccfd8;
     --brand-primary-light: #191724;
     --brand-primary-fill: #191724;
-    --status-online: #31748f;
-    --status-idle: #f6c177;
-    --status-dnd: #eb6f92;
-    --status-danger: #eb6f92;
-    --status-offline: #6e6a86;
-    --text-secondary: #6e6a86;
+    --plutonium: #c4a7e7;
+    --plutonium-hover: #9ccfd8;
+    --plutonium-text: #191724;
+
     --text-primary: #908caa;
     --text-primary-muted: #403d52;
+    --text-secondary: #6e6a86;
     --text-tertiary: #6e6a86;
+    --text-tertiary-muted: #403d52;
+    --text-tertiary-secondary: #6e6a86;
     --text-chat: #908caa;
     --text-chat-muted: #403d52;
     --text-on-brand-primary: #191724;
     --text-link: #9ccfd8;
-    --text-tertiary-muted: #403d52;
-    --text-tertiary-secondary: #6e6a86;
+    --text-code: #ebbcba;
+    --text-warning: #f6c177;
+    --message-timestamp-color: #524f67;
+
+    --status-online: #31748f;
+    --status-idle: #f6c177;
+    --status-dnd: #eb6f92;
+    --status-danger: #191724;
+    --status-offline: #6e6a86;
+    --status-warning: #f6c177;
+
+    --guild_list-foreground: #191724;
+    --guild-list-foreground: #191724;
+
     --border-color: #403d52;
     --border-color-hover: #524f67;
-    --accent-primary: #c4a7e7;
     --border-color-focus: #9ccfd8;
+
+    --accent-primary: #c4a7e7;
     --accent-success: #31748f;
     --accent-warning: #f6c177;
     --accent-danger: #eb6f92;
     --accent-info: #9ccfd8;
     --accent-purple: #c4a7e7;
+
     --alert-note-color: #9ccfd8;
-    --alert-important-color: #c4a7e7;
     --alert-tip-color: #31748f;
+    --alert-important-color: #c4a7e7;
     --alert-warning-color: #f6c177;
     --alert-caution-color: #eb6f92;
+
     --markup-mention-text: #c4a7e7;
     --markup-mention-fill: #403d52;
     --markup-interactive-hover-text: #191724;
     --markup-interactive-hover-fill: #9ccfd8;
+
+    --control-button-normal-bg: transparent;
+    --control-button-normal-text: #908caa;
+    --control-button-hover-bg: #403d52;
+    --control-button-hover-text: #e0def4;
+    --control-button-active-bg: #524f67;
+    --control-button-active-text: #e0def4;
+    --control-button-danger-text: #eb6f92;
+    --control-button-danger-hover-bg: #403d52;
+
     --button-primary-fill: #c4a7e7;
     --button-primary-active-fill: #9ccfd8;
     --button-primary-text: #191724;
@@ -73,15 +117,30 @@
     --button-outline-text: #908caa;
     --button-outline-active-fill: #403d52;
     --button-outline-active-border: #908caa;
+
     --bg-primary: #1f1d2e;
     --bg-secondary: #191724;
     --bg-tertiary: #26233a;
     --bg-hover: #403d52;
-    --bg-code-block: #26233a;
     --bg-active: #524f67;
     --bg-code: #26233a;
+    --bg-code-block: #26233a;
     --bg-blockquote: #21202e;
     --bg-table-header: #403d52;
     --bg-table-row-odd: #1f1d2e;
     --bg-table-row-even: #191724;
+
+    --voice-surface-0: #1f1d2e;
+    --voice-surface-1: #191724;
+    --voice-surface-2: #21202e;
+    --voice-surface-3: #26233a;
+    --voice-surface-4: #191724;
+    --voice-surface-5: #26233a;
+    --voice-text-strong: #908caa;
+    --voice-text-muted: #6e6a86;
+    --voice-text-subtle: #6e6a86;
+    --voice-status-success: #31748f;
+    --voice-status-warning: #f6c177;
+    --voice-status-caution: #eb6f92;
+    --voice-status-danger: #eb6f92;
 }
