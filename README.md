@@ -4,7 +4,7 @@ This repository contains custom color schemes for [Fluxer](https://fluxer.app).
 
 ## Available Themes
 
-- [Rosé Pine](rosepine.css)
+- [Rosé Pine](themes/rosepine.css)
 
 ## How to apply
 
