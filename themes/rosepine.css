@@ -30,7 +30,6 @@
     color: #eb6f92 !important;
 }
 
-/* Hover states */
 [class*="ContextMenu"] [class*="item"]:not([class*="danger"]):hover [class*="label"],
 [class*="ContextMenu"] [class*="item"]:not([class*="danger"]):hover [class*="itemLabel"] {
     color: #191724 !important;
@@ -45,6 +44,17 @@
 [class*="ContextMenu"] [class*="danger"]:hover [class*="itemLabel"],
 [class*="ContextMenu"] [class*="danger"]:hover svg {
     color: #191724 !important;
+}
+
+/* Reply bar readability */
+[class*="repliedTextContent"],
+[class*="repliedTextPreview"] {
+    color: #6e6a86 !important;
+}
+
+[class*="repliedMessage"]:hover [class*="repliedTextContent"],
+[class*="repliedMessage"]:hover [class*="repliedTextPreview"] {
+    color: #908caa !important;
 }
 
 :root {
