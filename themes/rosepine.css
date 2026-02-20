@@ -7,6 +7,46 @@
     color: #191724 !important;
 }
 
+/* Context menu improvements */
+[class*="ContextMenu"] [class*="item"]:not([class*="danger"]) [class*="label"],
+[class*="ContextMenu"] [class*="item"]:not([class*="danger"]) [class*="itemLabel"] {
+    color: #e0def4 !important;
+}
+
+[class*="ContextMenu"] [class*="item"]:not([class*="danger"]) [class*="itemIcon"],
+[class*="ContextMenu"] [class*="item"]:not([class*="danger"]) svg {
+    color: #908caa !important;
+}
+
+[class*="ContextMenu"] [class*="danger"] [class*="label"],
+[class*="ContextMenu"] [class*="danger"] [class*="itemLabel"],
+[class*="ContextMenu"] [class*="colorDanger"] [class*="label"] {
+    color: #eb6f92 !important;
+}
+
+[class*="ContextMenu"] [class*="danger"] [class*="itemIcon"],
+[class*="ContextMenu"] [class*="danger"] svg,
+[class*="ContextMenu"] [class*="colorDanger"] svg {
+    color: #eb6f92 !important;
+}
+
+/* Hover states */
+[class*="ContextMenu"] [class*="item"]:not([class*="danger"]):hover [class*="label"],
+[class*="ContextMenu"] [class*="item"]:not([class*="danger"]):hover [class*="itemLabel"] {
+    color: #191724 !important;
+}
+
+[class*="ContextMenu"] [class*="item"]:not([class*="danger"]):hover [class*="itemIcon"],
+[class*="ContextMenu"] [class*="item"]:not([class*="danger"]):hover svg {
+    color: #191724 !important;
+}
+
+[class*="ContextMenu"] [class*="danger"]:hover [class*="label"],
+[class*="ContextMenu"] [class*="danger"]:hover [class*="itemLabel"],
+[class*="ContextMenu"] [class*="danger"]:hover svg {
+    color: #191724 !important;
+}
+
 :root {
     --font-sans: 'Plus Jakarta Sans', sans-serif;
 
