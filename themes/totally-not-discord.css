@@ -1,0 +1,23 @@
+/**
+ * @name Totally Not-Discord
+ * @description A simplistic theme that takes the softer greys of Discord.
+ * @basetheme dark, coal
+ * @author Gualidan#3999
+ */
+
+:root {--background-secondary-lighter:#343437;}
+:root {  }
+:root { --background-primary: #343437; }
+:root { --background-secondary: #2E2E30; }
+:root { --background-secondary-alt: #38393C; }
+:root { --background-tertiary: #303033; }
+:root { --background-textarea: #303033; }
+:root {  }
+:root { --brand-primary: #9D9BE8; }
+:root { --brand-secondary: #5C5AB3; }
+:root { --brand-primary-light: #DAD9FF; }
+:root { --status-online: #45BF72; }
+:root { --status-idle: #FFDB6E; }
+:root { --status-dnd: #FF6161; }
+:root { --status-danger: #FF0500; }
+:root {  }
