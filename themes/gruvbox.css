@@ -1,0 +1,206 @@
+/*
+ Gruvbox Theme
+*/
+
+:root {
+    --theme-name: "Gruvbox Theme";
+
+    --background-header-primary: #32302f;
+    --background-header-secondary: #282828;
+    --guild-list-foreground: #282828;
+    --background-tertiary: #3c3836;
+    --background-channel-header: #3c3836;
+    --background-secondary-alt: #32302f;
+    --background-secondary: #282828;
+    --background-secondary-lighter: #504945;
+    --background-textarea: #282828;
+    --background-primary: #3c3836;
+
+    --text-primary: #ebdbb2;
+    --text-chat: #ebdbb2;
+    --text-secondary: rgba(235, 219, 178, 0.84);
+    --text-chat-muted: rgba(213, 196, 161, 0.68);
+    --text-primary-muted: rgba(213, 196, 161, 0.68);
+    --text-tertiary: #d5c4a1;
+    --text-tertiary-secondary: rgba(213, 196, 161, 0.72);
+    --text-tertiary-muted: rgba(168, 153, 132, 0.58);
+
+    --background-modifier-hover: rgba(250, 189, 47, 0.1);
+    --background-modifier-selected: rgba(184, 187, 38, 0.2);
+    --background-modifier-accent: rgba(131, 165, 152, 0.3);
+    --background-modifier-accent-focus: rgba(131, 165, 152, 0.46);
+
+    --brand-primary: #fabd2f;
+    --brand-secondary: #d79921;
+    --brand-primary-light: #f0c95f;
+    --brand-primary-fill: #282828;
+
+    --status-online: #8ec07c;
+    --status-idle: #fabd2f;
+    --status-dnd: #fb4934;
+    --status-offline: #7c6f64;
+    --status-danger: #fb4934;
+    --status-warning: #fabd2f;
+
+    --text-link: #83a598;
+    --text-on-brand-primary: #282828;
+
+    --border-color: #665c54;
+    --border-muted: #504945;
+    --border-subtle: #3c3836;
+    --border-secondary: #665c54;
+    --border-color-hover: #b8bb26;
+    --border-color-focus: #83a598;
+    --focus-primary: #83a598;
+
+    --interactive-muted: rgba(168, 153, 132, 0.36);
+    --interactive-active: rgba(250, 189, 47, 0.95);
+
+    --channel-unread: #b8bb26;
+    --channel-color: rgba(235, 219, 178, 0.76);
+    --muted-color: rgba(146, 131, 116, 0.38);
+}
+
+html,
+body,
+[class*="ChannelIndexPage.module__channelGrid"],
+[class*="ChannelHeader.module__headerWrapper"],
+[class*="ChannelHeader.module__headerContainer"] {
+    background: #3c3836 !important;
+    background-color: #3c3836 !important;
+    background-image: none !important;
+}
+
+[class*="OutlineFrame.module__frame"],
+[class*="OutlineFrame.module__body"],
+[class*="GuildLayout.module__guildMainContent"],
+[class*="GuildLayout.module__guildLayoutContainer"] {
+    background-color: #3c3836 !important;
+}
+
+[class*="GuildsLayout.module__guildListScrollerWrapper___"],
+[class*="GuildsLayout.module__userAreaWrapper___"],
+[class*="DMLayout.module__dmListContainer___"],
+[class*="GuildNavbar.module__guildNavbarContainer___"] {
+    background-color: #282828 !important;
+}
+
+[class*="NativeTitlebar.module__titlebar___"],
+[class*="GuildHeader.module__headerWrapper___"],
+[class*="GuildHeader.module__headerContainer___"] {
+    background: #32302f !important;
+    border-bottom: 1px solid #665c54 !important;
+}
+
+.ChannelItem\.module__channelItemHighlight___Xzk5Zm,
+.ChannelItem\.module__channelItemIconHighlight___Xzk5Zm,
+[class*="ChannelItem.module__channelItemHighlight___"],
+[class*="ChannelItem.module__channelItemIconHighlight___"] {
+    color: var(--channel-unread) !important;
+}
+
+.ChannelItem\.module__unreadIndicator___Xzk5Zm,
+[class*="ChannelItem.module__unreadIndicator___"] {
+    background-color: #b8bb26 !important;
+}
+
+.DMList\.module__dmItemSelected___XzM3ZG,
+[class*="DMList.module__dmItemSelected___"],
+[class*="SettingsModalLayout.module__sidebarItemSelected___"],
+[class*="SettingsModalLayout.module__sidebarSubItemActive___"],
+.UserArea\.module__active___XzEyMT,
+[class*="UserArea.module__active___"] {
+    background: linear-gradient(90deg, rgba(250, 189, 47, 0.22), rgba(250, 189, 47, 0.08)) !important;
+    border-left: 2px solid #fabd2f !important;
+}
+
+.Tabs\.module__tab___XzIxNj,
+[class*="Tabs.module__tab___"] {
+    color: rgba(213, 196, 161, 0.88) !important;
+    border-bottom: 1px solid transparent !important;
+}
+
+.Tabs\.module__selected___XzIxNj,
+[class*="Tabs.module__selected___"] {
+    color: #282828 !important;
+    background: #fabd2f !important;
+    border-color: #d79921 !important;
+}
+
+[class*="Input.module__input"],
+[class*="Input.module__inputContainer"],
+[class*="FormSurface.module__surface"],
+[class*="DesktopSettingsView.module__searchContainer___"],
+[class*="SettingsSearch.module__inputContainer___"] {
+    background: #282828 !important;
+    border-color: #665c54 !important;
+}
+
+[class*="Input.module__input"]:focus,
+[class*="Input.module__focusable___"]:focus,
+[class*="FormSurface.module__surface"]:focus-within {
+    border-color: #83a598 !important;
+    box-shadow: 0 0 0 1px rgba(131, 165, 152, 0.45) !important;
+}
+
+[class*="Button.module__primary___"],
+[class*="Button.module__button___"][class*="Button.module__primary___"] {
+    background: #d65d0e !important;
+    color: #fbf1c7 !important;
+    border: 1px solid #fe8019 !important;
+}
+
+[class*="Button.module__primary___"]:hover {
+    background: #fe8019 !important;
+    color: #282828 !important;
+}
+
+[class*="MentionBadge.module__badge"],
+[class*="MentionBadge.module__badgeSmall"] {
+    background-color: #b8bb26 !important;
+    color: #282828 !important;
+}
+
+[class*="MessageActionBar.module__actionBar___"],
+[class*="MessageActionBar.module__actionBarContainer___"] {
+    background: #32302f !important;
+    border: 1px solid #665c54 !important;
+}
+
+[class*="MessageActionBar.module__button___"]:hover,
+[class*="Message.module__buttons___"] [class*="Button.module__button___"]:hover {
+    color: #fabd2f !important;
+}
+
+.Markup\.module__codeContainer___XzBhZT,
+[class*="Markup.module__codeContainer___"] {
+    background-color: #282828 !important;
+    border: 1px solid #504945 !important;
+}
+
+.Scroller\.module__scroller___ZTgyZD,
+.Scroller\.module__scrollerTextarea___ZTgyZD,
+[class*="Scroller.module__scroller___"],
+[class*="Scroller.module__scrollerTextarea___"],
+[class*="UserProfileModal.module__scrollerFullHeight___"] {
+    scrollbar-color: #928374 #282828;
+    scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+*::-webkit-scrollbar-track {
+    background: #282828 !important;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #928374 0%, #7c6f64 100%) !important;
+    border: 1px solid #665c54 !important;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #a89984 0%, #928374 100%) !important;
+}
