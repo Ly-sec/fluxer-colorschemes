@@ -1,0 +1,198 @@
+/* CSS Variables - Black and Amber color palette */
+:root {
+--amber: #FFA500;
+--amber-bright: #FFB300;
+--amber-dark: #FF8C00;
+--amber-text: #FFB84D; /* Softer amber for text */
+--black: #050505;
+--dark-gray: #121212;
+--medium-gray: #222222;
+--accent-amber: #FFBF00;
+--bg-black: #050505;
+--bg-dark: #0a0a0a;
+--glow-radius: 6px;
+}
+
+/* Global Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Body - Black and Amber foundation */
+body {
+font-family: 'Arial', 'Helvetica', sans-serif !important;
+background: var(--bg-black) !important;
+color: var(--amber-text) !important;
+height: 100vh;
+overflow: hidden;
+letter-spacing: 0.03em;
+}
+
+/* Soft amber vignette */
+body::after {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: radial-gradient(ellipse at center,
+rgba(10, 10, 10, 0.05) 0%,
+rgba(255, 165, 0, 0.015) 80%,
+rgba(255, 140, 0, 0.08) 100%);
+pointer-events: none;
+z-index: 999998;
+}
+
+/* Subtle power-on animation */
+@keyframes powerOn {
+0% { opacity: 0.97; }
+50% { opacity: 1; }
+100% { opacity: 0.98; }
+}
+
+body {
+animation: powerOn 4s ease-in-out infinite;
+}
+
+/* Dark backgrounds - TARGETED selectors only */
+.appLayout,
+.guildsLayoutContainer,
+.channelListScroller,
+.guildLayoutContent,
+.channelMembers,
+.NativeTitlebar,
+[class*="sidebar"],
+[class*="chat"],
+[class*="members"] {
+background: var(--bg-black) !important;
+background-color: var(--bg-black) !important;
+}
+
+/* Text colors - TARGETED, not universal - with amber */
+h1, h2, h3, h4, h5, h6,
+p, span, div[class*="text"],
+[class*="title"],
+[class*="name"],
+[class*="label"] {
+color: var(--amber-text) !important;
+}
+
+/* Channel Notification Indicators */
+[class*="channelItem"][aria-label*="has new messages"]:not([class*="channelItemSelected"]) {
+border-left: 3px solid var(--accent-amber) !important;
+background: rgba(255, 191, 0, 0.1) !important;
+box-shadow: inset 3px 0 0 var(--accent-amber), 0 0 10px rgba(255, 191, 0, 0.4) !important;
+}
+
+/* Mention indicator */
+[class*="channelItem"][data-has-mention="true"],
+[class*="channelItem"]:has([class*="mentionBadge"]) {
+border-left: 4px solid var(--amber-bright) !important;
+background: rgba(255, 165, 0, 0.15) !important;
+box-shadow: inset 4px 0 0 var(--amber-bright), 0 0 15px rgba(255, 165, 0, 0.6) !important;
+}
+
+/* Invite Buttons */
+.ChannelItemIcon.module__iconButton___XzJiN2,
+button[aria-label="Invite Members"],
+[class*="channelItemActions"] button {
+background: rgba(255, 165, 0, 0.15) !important;
+border: 2px solid var(--amber-dark) !important;
+border-radius: 6px !important;
+padding: 6px !important;
+transition: all 0.15s ease !important;
+}
+
+.ChannelItemIcon.module__iconButton___XzJiN2:hover,
+button[aria-label="Invite Members"]:hover {
+background: rgba(255, 165, 0, 0.3) !important;
+border-color: var(--amber-bright) !important;
+box-shadow: 0 0 12px rgba(255, 165, 0, 0.6) !important;
+transform: scale(1.05);
+}
+
+/* Voice Control Buttons */
+.UserArea.module__controlButton___XzEyMT,
+button[aria-label="Mute"],
+button[aria-label="Deafen"],
+button[aria-label="User Settings"] {
+background: rgba(255, 165, 0, 0.15) !important;
+border: 2px solid var(--amber) !important;
+border-radius: 6px !important;
+padding: 8px !important;
+margin: 2px;
+min-width: 36px;
+min-height: 36px;
+}
+
+.UserArea.module__controlButton___XzEyMT:hover,
+button[aria-label="Mute"]:hover,
+button[aria-label="Deafen"]:hover {
+background: rgba(255, 165, 0, 0.3) !important;
+border-color: var(--amber-bright) !important;
+box-shadow: 0 0 15px rgba(255, 165, 0, 0.6) !important;
+}
+
+/* SVG icons */
+.UserArea.module__controlButton___XzEyMT svg path,
+button[aria-label="Mute"] svg path,
+button[aria-label="Deafen"] svg path {
+fill: var(--amber-bright) !important;
+stroke: var(--amber-bright) !important;
+}
+
+/* Active voice states */
+.UserArea.module__controlButton___XzEyMT[aria-pressed="true"],
+button[aria-label="Mute"][aria-pressed="true"] {
+background: rgba(42, 42, 42, 0.4) !important;
+border-color: var(--medium-gray) !important;
+}
+
+/* Active/Selected channels */
+.ChannelItem.module__channelItemSelected___Xzk5Zm,
+[aria-selected="true"][class*="channelItem"] {
+background: rgba(255, 165, 0, 0.2) !important;
+border-left: 4px solid var(--amber-bright) !important;
+box-shadow: inset 0 0 15px rgba(255, 165, 0, 0.25) !important;
+}
+
+/* Channel hover */
+.ChannelItem.module__channelItemHoverable___Xzk5Zm:hover {
+background: rgba(255, 165, 0, 0.1) !important;
+border-left: 2px solid var(--amber) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+width: 12px !important;
+background: var(--bg-dark) !important;
+}
+
+::-webkit-scrollbar-track {
+background: var(--bg-black) !important;
+border: 1px solid var(--amber-dark) !important;
+border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb {
+background: var(--amber) !important;
+border: 2px solid var(--bg-black) !important;
+border-radius: 4px !important;
+box-shadow: inset 0 0 4px rgba(255, 165, 0, 0.5) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: var(--amber-bright) !important;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+*, *::before, *::after {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+}
+}
