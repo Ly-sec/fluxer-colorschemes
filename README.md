@@ -5,6 +5,9 @@ This repository contains custom color schemes for [Fluxer](https://fluxer.app).
 ## Available Themes
 
 - [Rosé Pine](themes/rosepine.css)
+- [Gruvbox](themes/gruvbox.css)
+- [Dark Orange](themes/dark-orange.css)
+- [Totally Not Discord](themes/totally-not-discord.css)
 
 ## How to apply
 
